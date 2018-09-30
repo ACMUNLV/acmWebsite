@@ -1,0 +1,59 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+section {
+  padding: 150px 0;
+}
+
+.bg-ourRed{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/icpc_fall2018.jpg");
+
+  display: table;
+
+  /* Full page */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+
+.my-modal-text {
+  font-size: large;
+  font-weight: 200;
+}
+
+.container-table{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.img-cursor{
+  cursor: pointer;
+}
