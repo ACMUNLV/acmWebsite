@@ -69,3 +69,12 @@ section {
 .bg-unlvRed{
   background-color: rgba(177,2,2,.92);
 }
+
+.icpc-submit-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #ffc107;
+  border-radius: 6px;
+}
