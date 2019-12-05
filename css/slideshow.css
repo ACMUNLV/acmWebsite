@@ -5,12 +5,14 @@
     /* max-width: 1000px; */
     position: relative;
     margin: auto;
-    width: 100vw;
+    width: 100vw;    
+    background-color: rgba(0,0,0,1);
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  
 }
 
 /* Next & previous buttons */
@@ -85,7 +87,7 @@
 }
 
 #megatronSlideShow {
-    height: 100vh;
+    height: fit-content;
     padding: 0;
     width: 100vw;
     /* max-height: 700px; */
@@ -99,11 +101,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    height: fit-content;
+    width: fit-content;
+    color:white;
 }
 #headline_container {
+/*
     background-color: rgba(127,127,127,.7);
+*/
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     border-radius: 3px;
     padding: 10px;
+    height:100%;
+    width:100%;
     
 }
 
