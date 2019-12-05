@@ -13,6 +13,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/slideshow.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -60,7 +61,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Opportunitiess</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Opportunities</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#meetups">Meetups</a>
@@ -73,27 +74,60 @@
     </div>
   </nav>
 
-  <header class="bg-ourRed text-white">
-    <div class="container container-table text-center">
-      <h1 class="display-4 text-white">Welcome to UNLV ACM's Web Page!</h1>
-      <p class="lead">You will find everything about UNLV ACM here!</p>
+  <section id="megatronSlideShow">
+	  <!-- Slideshow container -->
+		<div class="slideshow-container">
+			
+					
+		  <!-- Contains heading text and buttons -->
+		  <div id="headline">
+			<div id="headline_container"class="container container-table text-center"> 
+				
+			  <h1 class="display-4 text-white">Welcome to UNLV ACM's Web Page!</h1>
+			  <p class="lead">You will find everything about UNLV ACM here!</p>
+			  
+			  <a href="img/mockIcpc11-2-19.zip" role="button" class="btn btn-outline-light" target="_blank">Mock ICPC 11-2-19
+				Sample Input</a>
+			  <a href="img/Rules for 2019 UNLV ACM’s Mock ICPC.pdf" role="button" class="btn btn-outline-light"
+				target="_blank">Mock ICPC Rules</a>
+			  <a href="img/Sp 19 Coding Meetup Flyer2.pdf" role="button" class="btn btn-outline-light" target="_blank">ICPC Coding Meetups</a>
+			  
+			</div>
+		  </div>
 
-      <!-- ED'S CHANGES 2/24, 3/5 -->
-      <a href="img/mockIcpc11-2-19.zip" role="button" class="btn btn-outline-light" target="_blank">Mock ICPC 11-2-19
-        Sample Input</a>
-      <a href="img/Rules for 2019 UNLV ACM’s Mock ICPC.pdf" role="button" class="btn btn-outline-light"
-        target="_blank">Mock ICPC Rules</a>
-      <!-- <a href="img/Sp 19 Coding Meetup Flyer2.pdf" role="button" class="btn btn-outline-light" target="_blank">ICPC Coding Meetups</a> -->
-      <!-- ED'S CHANGES 2/24, 3/5 -->
+		  <!-- Full-width images with number-->
+		  <div class="mySlides fadeSlide">
+			<div class="numbertext">1 / 4</div>
+			<img src="img/slideshow/img1.jpg" style="width:100%">
 
-      <!--  DELETED 2/24
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPZPnKJSvBBqhouWbTMuKtS3YR-dAh5t-Z4IEVVm2PMRQi6Q/viewform?usp=sf_link" role="button" class="btn btn-outline-light" target="_blank">Become an Officer!</a>
-        <a href="img/licensePlate.pdf" role="button" class="btn btn-outline-light" target="_blank">Solve an ICPC Problem!</a>
--->
+		  </div>
 
-    </div>
-  </header>
+		  <div class="mySlides fadeSlide">
+			<div class="numbertext">2 / 4</div>
+			<img src="img/slideshow/img2.jpg" style="width:100%">
 
+		  </div>
+
+		  <div class="mySlides fadeSlide">
+			<div class="numbertext">3 / 4</div>
+			<img src="img/slideshow/img3.jpg" style="width:100%">
+
+		  </div>
+		  
+		  <div class="mySlides fadeSlide">
+			<div class="numbertext">4 / 4</div>
+			<img src="img/slideshow/img4.jpg" style="width:100%">
+
+		  </div>
+		</div>
+		<br>
+		
+
+  </section>
+  
+  
+
+  
   <section id="about">
     <div class="container">
       <div class="row">
@@ -331,6 +365,9 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+  
+  <!--  For slideshow -->
+  <script src="js/slideshow.js"></script>
 
 </body>
 
