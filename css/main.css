@@ -10,3 +10,8 @@
 .navbar{
     width:100vw;
 }
+
+#main {
+    position: relative;
+    top: -15%;
+}
