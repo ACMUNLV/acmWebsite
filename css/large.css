@@ -8,3 +8,12 @@
     font-size: 1.5rem !important;
     font-weight: 300;
 }
+
+iframe {
+    display: inline-block;
+    width: 80vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
