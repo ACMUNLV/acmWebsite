@@ -11,9 +11,18 @@
   <title>UNLV ACM</title>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <link href="css/slideshow.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Small Styles -->
+  <link rel='stylesheet' media="screen and (max-device-width: 700px)" href='css/small.css' />
+  <!-- Medium Styles -->
+  <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />  
+  <!-- Desktop Styles -->
+  <link rel='stylesheet' media='screen and (min-device-width: 901px)' href='css/large.css' />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -46,14 +55,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-unlvRed fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/acm_logo2.png" style="height: 40px; width: 50px;">
+        <div id="logo"></div>
+        <!-- <img src="img/acm_logo2.png" style="height: 40px; width: 50px;"> -->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div style="float: left;" class="nav-item">
-        <a class="nav-link js-scroll-trigger icpc-submit-btn" href="icpcsubmit.html">Submit Your ICPC Problems</a>
+        <a class="nav-link icpc-submit-btn" href="icpcsubmit.html">Submit ICPC Problems</a>
       </div>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -74,60 +84,56 @@
     </div>
   </nav>
 
+
   <section id="megatronSlideShow">
-	  <!-- Slideshow container -->
-		<div class="slideshow-container">
-			
-					
-		  <!-- Contains heading text and buttons -->
-		  <div id="headline">
-			<div id="headline_container"class="container container-table text-center"> 
-				
-			  <h1 class="display-4 text-white">Welcome to UNLV ACM's Web Page!</h1>
-			  <p class="lead">You will find everything about UNLV ACM here!</p>
-			  
-			  <a href="img/mockIcpc11-2-19.zip" role="button" class="btn btn-outline-light" target="_blank">Mock ICPC 11-2-19
-				Sample Input</a>
-			  <a href="img/Rules for 2019 UNLV ACM’s Mock ICPC.pdf" role="button" class="btn btn-outline-light"
-				target="_blank">Mock ICPC Rules</a>
-			  <a href="img/Sp 19 Coding Meetup Flyer2.pdf" role="button" class="btn btn-outline-light" target="_blank">ICPC Coding Meetups</a>
-			  
-			</div>
-		  </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+          
+      <!-- Contains heading text and buttons -->
+      <div id="headline">
+      <div id="headline_container"> 
+        
+        <h1 class="headline_title text-white">Welcome to UNLV ACM's Web Page!</h1>
+        <p class="headline_lead">You will find everything about UNLV ACM here!</p>
+        <div>
+          <a href="img/mockIcpc11-2-19.zip" role="button" class="btn btn-outline-light" target="_blank">Mock ICPC 11-2-19
+          Sample Input</a>
+          <a href="img/Rules for 2019 UNLV ACM’s Mock ICPC.pdf" role="button" class="btn btn-outline-light"
+          target="_blank">Mock ICPC Rules</a>
+          <a href="img/Sp 19 Coding Meetup Flyer2.pdf" role="button" class="btn btn-outline-light" target="_blank">ICPC Coding Meetups</a>
+        </div>
+      </div>
+      </div>
 
-		  <!-- Full-width images with number-->
-		  <div class="mySlides fadeSlide">
-			<div class="numbertext">1 / 4</div>
-			<img src="img/slideshow/img1.jpg" style="width:100%">
+      <!-- Full-width images with number-->
+      <div class="mySlides fadeSlide">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/slideshow/img1.jpg" style="width:100%">
 
-		  </div>
+      </div>
 
-		  <div class="mySlides fadeSlide">
-			<div class="numbertext">2 / 4</div>
-			<img src="img/slideshow/img2.jpg" style="width:100%">
+      <div class="mySlides fadeSlide">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/slideshow/img2.jpg" style="width:100%">
 
-		  </div>
+      </div>
 
-		  <div class="mySlides fadeSlide">
-			<div class="numbertext">3 / 4</div>
-			<img src="img/slideshow/img3.jpg" style="width:100%">
+      <div class="mySlides fadeSlide">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/slideshow/img3.jpg" style="width:100%">
 
-		  </div>
-		  
-		  <div class="mySlides fadeSlide">
-			<div class="numbertext">4 / 4</div>
-			<img src="img/slideshow/img4.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fadeSlide">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/slideshow/img4.jpg" style="width:100%">
 
-		  </div>
-		</div>
-		<br>
-		
+      </div>
 
+
+    </div>
   </section>
-  
-  
 
-  
   <section id="about">
     <div class="container">
       <div class="row">
@@ -198,12 +204,13 @@
           <br>
           Come to our ICPC Coding Meetups! We meet up, discuss coding problems, <br>
           and prep for ICPC (our coding competition in California) every Saturday. <br><br>
-          <iframe style="display: inline-block"
-            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWNtQHVubHYuZWR1&amp;src=amZ1ZXRkN2w3YWY4aDBiZ2JpN2lrNjNwaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23795548&amp;color=%2333B679&amp;color=%23009688"
-            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          
           <!-- ED'S CHANGES 2/24, 3/5 -->
 
         </p>
+        <iframe style="display: inline-block"
+            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWNtQHVubHYuZWR1&amp;src=amZ1ZXRkN2w3YWY4aDBiZ2JpN2lrNjNwaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23795548&amp;color=%2333B679&amp;color=%23009688"
+            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
   </section>

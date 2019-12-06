@@ -6,7 +6,7 @@
     position: relative;
     margin: auto;
     width: 100vw;    
-    background-color: rgba(0,0,0,1);
+    /* background-color: rgba(0,0,0,1); */
 }
 
 /* Hide the images by default */
@@ -81,40 +81,45 @@
 /* Fading animation */
 .fadeSlide {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.0s;
 }
 
-#megatronSlideShow {
-    height: fit-content;
-    padding: 0;
-    width: 100vw;
-    /* max-height: 700px; */
-    padding-top: 4.1rem;
+#megatronSlideShow  {
+  /* height: fit-content; */
+  padding: 0;
+  /* width: 100vw; */
+  padding-top: 4.7rem;
 }
 
 #headline {
-    position: relative;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
     color:white;
 }
 #headline_container {
-/*
-    background-color: rgba(127,127,127,.7);
-*/
-	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-    border-radius: 3px;
-    padding: 10px;
-    height:100%;
-    width:100%;
+  /* background-color: rgba(127,127,127,.7); */
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  border-radius: 3px;
+  padding: 10px;
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#buttonContainer {
+
     
+
 }
 
 @-webkit-keyframes fade {
