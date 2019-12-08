@@ -1,0 +1,17 @@
+#logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/acm_logo2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width:100vw;
+}
+
+#frontText {
+    position: relative;
+    top: -15%;
+}

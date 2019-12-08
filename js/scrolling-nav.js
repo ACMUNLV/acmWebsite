@@ -1,5 +1,6 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict"; // Start of use strict    
+  console.log("Here");
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -8,11 +9,13 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 76)
         }, 1000, "easeInOutExpo");
         return false;
       }
     }
+
+
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
@@ -23,7 +26,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 54
+    offset: 76
   });
 
 })(jQuery); // End of use strict

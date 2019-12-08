@@ -4,9 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-html, body{
+html, body {
   height: 100%;
   width: 100%;
+  /* overflow-x: hidden; */
 }
 
 header {
@@ -20,11 +21,13 @@ header {
 }
 
 section {
-  padding: 150px 0;
+  padding: 3em 0;
 }
 
 .bg-ourRed{
+/*
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/icpc_fall2018.jpg");
+*/
 
   display: table;
 
@@ -78,3 +81,5 @@ section {
   background-color: #ffc107;
   border-radius: 6px;
 }
+
+
