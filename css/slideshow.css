@@ -114,12 +114,12 @@
 
 
 @-webkit-keyframes fade {
-  from {opacity: .8}
+  from {opacity: .9}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .8}
+  from {opacity: .9}
   to {opacity: 1}
 }
 
@@ -128,6 +128,6 @@
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease ;
 }
