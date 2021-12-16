@@ -257,6 +257,7 @@ a {
     background-color  : transparent ; /* Invisible Background         */
     background-repeat : no-repeat   ; /* Don't repeat the image       */
     background-size   : cover       ; /* Cover the element            */
+    color             : #b10202     ; /* Fancy Red Icons              */
 
 }
 
