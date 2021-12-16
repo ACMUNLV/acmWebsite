@@ -15,7 +15,9 @@ Any more than this is potentially unnecessary (This is arguable, more pages coul
 
 ## Todo
 
+* New ICPC Picture and potentially an external link to their website
 * Support Different Screen Size
+* Social Media Icons so we can remove the link
 * New Logo (Potentially new colors)
 * More content (A lot of the old content was outdated)
 * Add Workshops (Training Officers)
