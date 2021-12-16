@@ -1,0 +1,333 @@
+/* --------- */
+/* Site Mode */
+
+*{
+
+    -webkit-font-smoothing  : antialiased ; /* Fancy render               */
+    -moz-osx-font-smoothing : grayscale   ; /* Fancy render               */
+    -webkit-touch-callout   : none        ; /* No selection allowed       */
+    -webkit-user-select     : none        ; /* No selection allowed       */
+    -khtml-user-select      : none        ; /* No selection allowed       */
+    -moz-user-select        : none        ; /* No selection allowed       */
+    -ms-user-select         : none        ; /* No selection allowed       */
+    user-select             : none        ; /* No selection allowed       */
+    
+}
+
+/* ----------------- */
+/* Built-In Elements */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : auto        ; /* Auto Margin                   */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : block       ; /* Stack the Elements Vertically */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+    
+}
+
+a {
+
+    color           : #ffffff ; /* White Links */
+    text-decoration : none    ; /* No underline */
+
+}
+
+/* ---------------- */
+/* Defined Elements */
+
+.wrapper_prime {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : auto        ; /* Auto Margin                   */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : block       ; /* Stack the Elements Vertically */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+
+}
+
+.header {
+
+    width              : 100%                        ; /* Fill the Parent              */
+    max-width          : 100%                        ; /* Maximum Parent Width         */
+    height             : auto                        ; /* Wrap the Children            */
+    margin             : auto                        ; /* Auto Margin                  */
+    padding            : 16px 16px 16px 16px         ; /* Fancy Padding                */
+    display            : flex                        ; /* Flexbox                      */
+    align-items        : center                      ; /* Center the items vertically  */
+    justify-content    : flex-end                    ; /* Shove the items to the right */
+    position           : fixed                       ; /* Stay relative to window      */
+    box-sizing         : border-box                  ; /* Prevents overflow            */
+    z-index            : 2                           ; /* Keep on top                  */
+    background-color   : transparent                 ; /* Invisible Background         */
+    -webkit-transition : background-color 400ms ease ; /* Set the animation duration   */
+    -moz-transition    : background-color 400ms ease ; /* Set the animation duration   */
+    -ms-transition     : background-color 400ms ease ; /* Set the animation duration   */
+    transition         : background-color 400ms ease ; /* Set the animation duration   */
+
+}
+
+.header_logo {
+
+    width             : 56px                        ; /* Fixed Width                     */
+    max-width         : 56px                        ; /* Maximum Width                   */
+    height            : 56px                        ; /* Fixed Height                    */
+    max-height        : 56px                        ; /* Maximum Height                  */
+    margin-right      : auto                        ; /* Shoves this Element to the left */
+    padding           : auto                        ; /* Auto Padding                    */
+    position          : static                      ; /* Keep normal flow positioning    */
+    box-sizing        : border-box                  ; /* Prevents overflow               */
+    background-color  : transparent                 ; /* Invisible Background            */
+    background-repeat : no-repeat                   ; /* Don't repeat the image          */
+    background-size   : cover                       ; /* Cover the element               */
+    background-image  : url("../img/acm_logo2.png") ; /* Set the logo Image              */
+
+}
+
+.header_navigation_item {
+
+    width            : auto         ; /* Wrap Contents                */
+    height           : auto         ; /* Wrap Contents                */
+    margin           : 8px          ; /* Surrounding Margin           */
+    padding          : auto         ; /* Auto Padding                 */
+    position         : static       ; /* Keep normal flow positioning */
+    box-sizing       : border-box   ; /* Prevents overflow            */
+    background-color : transparent  ; /* Invisible Background         */
+    font-family      : 'Montserrat' ; /* Fancy Font                   */
+    font-size        : 24px         ; /* Font size                    */
+    font-weight      : 500          ; /* Make it noticable            */
+    color            : #ffffff      ; /* Text Color                   */
+
+}
+
+.banner{
+
+    width                 : 100%                            ; /* Fill the parent               */
+    max-width             : 100%                            ; /* Maximum Parent Width          */
+    height                : 100vh                           ; /* Fill the Window               */
+    max-height            : 100vh                           ; /* Maximum Window Height         */
+    margin                : auto                            ; /* Center Horizontally           */
+    padding               : auto                            ; /* Auto Padding                  */
+    display               : flex                            ; /* Flexbox                       */
+    position              : static                          ; /* Keep Normal Flow Positioning  */
+    box-sizing            : border-box                      ; /* Prevents overflow             */
+    z-index               : 0                               ; /* Keep This underneath          */
+    background-color      : transparent                     ; /* Invisible Background          */
+    align-items           : center                          ; /* Center the items Vertically   */
+    justify-content       : center                          ; /* Center the items Horizontally */
+    background-repeat     : no-repeat                       ; /* Single Image                  */
+    background-size       : cover                           ; /* we want to cover the block    */
+    background-image      : url("../img/icpc_fall2018.jpg") ; /* Image                         */
+    background-attachment : fixed                           ; /* For the neat floating effect  */
+
+}
+
+.banner_text {
+
+    width            : auto                    ; /* Wrap Content                 */
+    max-width        : 100%                    ; /* Maximum Parent Width         */
+    height           : auto                    ; /* Wrap Content                 */
+    margin           : auto                    ; /* Auto Margin                  */
+    padding          : auto                    ; /* Auto Padding                 */
+    position         : static                  ; /* Keep Normal Flow Positioning */
+    box-sizing       : border-box              ; /* Prevents Overflow            */
+    background-color : transparent             ; /* Invisible Background         */
+    font-family      : 'Quicksand', sans-serif ; /* Fancy Font                   */
+    font-size        : 48px                    ; /* Readable size                */
+    font-weight      : 500                     ; /* Somewhat heavy weight        */
+    color            : #ffffff                 ; /* Text Color                   */
+
+}
+
+.main_content {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : auto        ; /* Auto Margin                   */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : flex        ; /* Flexbox                       */
+    flex-direction   : column      ; /* Stack the elements vertically */
+    justify-content  : center      ; /* Center the items Horizontally */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+
+}
+
+.section {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : auto        ; /* Auto Margin                   */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : flex        ; /* Flexbox                       */
+    flex-direction   : column      ; /* Stack the elements vertically */
+    justify-content  : center      ; /* Center the items Horizontally */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+
+}
+
+.section_title {
+
+    width            : 100%                     ; /* Fill the parent               */
+    max-width        : 100%                     ; /* Maximum Parent Width          */
+    height           : auto                     ; /* Wrap content                  */
+    margin           : auto                     ; /* Auto Margin                   */
+    margin-top       : 0px                      ; /* No Top Margin                 */
+    margin-bottom    : 0px                      ; /* No Bottom Margin              */
+    padding          : 8px                      ; /* Slight Padding                */
+    display          : flex                     ; /* Line up horizontally          */
+    position         : static                   ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box               ; /* Prevents overflow             */
+    z-index          : 1                        ; /* Baseline Depth                */
+    background-color : #b10202                  ; /* Background Color              */
+    font-family      : 'Montserrat', sans-serif ; /* Fancy Font                    */
+    font-size        : 24px                     ; /* Catch the attention           */
+    font-weight      : 600                      ; /* Somewhat heavy                */
+    color            : #ffffff                  ; /* Text Color                    */
+
+}
+
+.section_content {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : auto        ; /* Auto Margin                   */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : flex        ; /* Flexbox                       */
+    flex-direction   : column      ; /* Stack the elements vertically */
+    justify-content  : center      ; /* Center the items Horizontally */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+
+}
+
+.contact_icons {
+
+    width            : 100%        ; /* Fill the parent               */
+    max-width        : 100%        ; /* Maximum Parent Width          */
+    height           : auto        ; /* Wrap the Children             */
+    margin           : 0px         ; /* No Margin                     */
+    margin-bottom    : 8px         ; /* Slight Margin                 */
+    padding          : auto        ; /* Auto Padding                  */
+    display          : flex        ; /* Flexbox                       */
+    flex-direction   : row         ; /* Stack the elements vertically */
+    justify-content  : center      ; /* Center the items Horizontally */
+    position         : static      ; /* Keep Normal Flow Positioning  */
+    box-sizing       : border-box  ; /* Prevents overflow             */
+    z-index          : 1           ; /* Baseline Depth                */
+    background-color : transparent ; /* Invisible Background          */
+
+}
+
+.contact_icon {
+
+    width             : auto        ; /* Fixed Width                  */
+    height            : auto        ; /* Fixed Height                 */
+    margin            : 8px         ; /* Fancy Margin                 */
+    padding           : auto        ; /* Auto Padding                 */
+    position          : static      ; /* Keep normal flow positioning */
+    box-sizing        : border-box  ; /* Prevents overflow            */
+    background-color  : transparent ; /* Invisible Background         */
+    background-repeat : no-repeat   ; /* Don't repeat the image       */
+    background-size   : cover       ; /* Cover the element            */
+
+}
+
+.topic {
+
+    width            : 100%        ; /* Fill the parent                */
+    max-width        : 100%        ; /* Maximum Parent Width           */
+    height           : 100%        ; /* Wrap the Children              */
+    margin           : auto        ; /* Auto Margin                    */
+    padding          : auto        ; /* Auto Padding                   */
+    display          : flex        ; /* Flexbox                        */
+    flex-direction   : row         ; /* Line the Elements Horizontally */
+    position         : static      ; /* Keep Normal Flow Positioning   */
+    box-sizing       : border-box  ; /* Prevents overflow              */
+    z-index          : 1           ; /* Baseline Depth                 */
+    background-color : transparent ; /* Invisible Background           */
+
+}
+
+.topic_picture {
+
+    width             : 40%         ; /* Portion of the parent         */
+    max-width         : 40%         ; /* Maximum Portion of the Parent */
+    height            : 100%        ; /* Fill the Parent               */
+    max-height        : 100%        ; /* Maximum Parent Height         */
+    margin            : auto        ; /* Center Horizontally           */
+    padding           : auto        ; /* Auto Padding                  */
+    position          : static      ; /* Keep normal flow positioning  */
+    box-sizing        : border-box  ; /* Prevents overflow             */
+    background-color  : transparent ; /* Invisible Background          */
+    background-repeat : no-repeat   ; /* Single Image                  */
+    background-size   : cover       ; /* we want to cover the block    */
+
+}
+
+.topic_picture_blurb {
+
+    width            : auto                    ; /* Wrap Content                 */
+    max-width        : 60%                     ; /* Maximum 60% Width            */
+    height           : auto                    ; /* Wrap Content                 */
+    margin           : auto                    ; /* Auto Margin                  */
+    padding          : 16px                    ; /* Fancy padding                */
+    display          : flex                    ; /* Flexbox                      */
+    justify-content  : center                  ; /* Center the content           */
+    position         : static                  ; /* Keep Normal Flow Positioning */
+    box-sizing       : border-box              ; /* Prevents Overflow            */
+    z-index          : 1                       ; /* Baseline Depth               */
+    background-color : transparent             ; /* Invisible Background         */
+    font-family      : 'Quicksand', sans-serif ; /* Fancy Font                   */
+    font-size        : 24px                    ; /* Nice font size               */
+    font-weight      : 400                     ; /* Good weight                  */
+    text-align       : center                  ; /* Center the text              */
+
+}
+
+.topic_blurb {
+
+    width            : 100%                    ; /* Fill Parent                  */
+    max-width        : 100%                    ; /* Maximum Parent Width         */
+    height           : auto                    ; /* Wrap Content                 */
+    margin           : auto                    ; /* Auto Margin                  */
+    padding          : 16px                    ; /* Fancy padding                */
+    display          : flex                    ; /* Flexbox                      */
+    justify-content  : center                  ; /* Center the content           */
+    position         : static                  ; /* Keep Normal Flow Positioning */
+    box-sizing       : border-box              ; /* Prevents Overflow            */
+    z-index          : 1                       ; /* Baseline Depth               */
+    background-color : transparent             ; /* Invisible Background         */
+    font-family      : 'Quicksand', sans-serif ; /* Fancy Font                   */
+    font-size        : 24px                    ; /* Nice font size               */
+    font-weight      : 400                     ; /* Good weight                  */
+    text-align       : center                  ; /* Center the text              */
+
+}

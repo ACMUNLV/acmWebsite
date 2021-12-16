@@ -1,382 +1,241 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="unlv acm official web page">
-  <meta name="author" content="leo_jonathan">
-  <meta name="keywords" content="unlvacm, acm, unlv, unlv icpc, icpc acm, leo">
+    <head>
 
-  <title>UNLV ACM</title>
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Page Attributes -->
+        <meta charset="utf-8">
 
-  <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link href="css/slideshow.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/scrolling-nav.css"> -->
+        <!--<link rel="stylesheet" href="css/slideshow.css"> -->
+        <!--<link rel="stylesheet" href="css/main.css"> -->
 
-  <!-- Small Styles -->
-  <link rel='stylesheet' media="screen and (max-device-width: 700px)" href='css/small.css' />
-  <!-- Medium Styles -->
-  <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />  
-  <!-- Desktop Styles -->
-  <link rel='stylesheet' media='screen and (min-device-width: 901px)' href='css/large.css' />
+        <!-- Fonts -->
+        <!-- Montserrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- Meta Tags -->
+        <meta name="viewport"    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="UNLV ACM">
+        <meta name="author"      content="leo_jonathan, cuenca_carlos">
+        <meta name="keywords"    content="unlvacm, acm, unlv, unlv icpc, icpc acm">
 
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- favicons-->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+        <title>UNLV ACM</title>
 
-</head>
+        <!-- Might get rid of these -->
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Small Styles -->
+        <link rel='stylesheet' media="screen and (max-device-width: 700px)" href='css/small.css' />
+        <!-- Medium Styles -->
+        <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />  
+        <!-- Desktop Styles -->
+        <link rel='stylesheet' media='screen and (min-device-width: 901px)' href='css/large.css' />
+        <!-- No clue what this is -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<body id="page-top">
+        <!-- favicons-->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/manifest.json">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-unlvRed fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <div id="logo"></div>
-        <!-- <img src="img/acm_logo2.png" style="height: 40px; width: 50px;"> -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div style="float: left;" class="nav-item">
-        <a class="nav-link icpc-submit-btn" href="icpcsubmit.html">Submit ICPC Problems</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Opportunities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#meetups">Meetups</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </head>
+    <!-- End Head -->
 
+    <!-- Body -->
+    <body>
 
-  <section id="megatronSlideShow">
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-          
-      <!-- Contains heading text and buttons -->
-      <div id="headline">
-      <div id="headline_container"> 
-        <div id="frontText">
-          <h1 class="headline_title text-white">Welcome to UNLV ACM's Web Page!</h1>
-          <p class="headline_lead">You will find everything about UNLV ACM here!</p>
-          <div>
-            <a href="img/mockIcpc11-2-19.zip" role="button" class="btn btn-outline-light" target="_blank">Mock ICPC 11-2-19
-            Sample Input</a>
-            <a href="img/Rules for 2019 UNLV ACM’s Mock ICPC.pdf" role="button" class="btn btn-outline-light"
-            target="_blank">Mock ICPC Rules</a>
-            <a href="img/Sp 19 Coding Meetup Flyer2.pdf" role="button" class="btn btn-outline-light" target="_blank">ICPC Coding Meetups</a>
-          </div>
-        </div>
-      </div>
-      </div>
+        <!-- Start Main Wrapper -->
+        <div class="wrapper_prime">
 
-      <!-- Full-width images with number-->
-      <div class="mySlides fadeSlide">
-      <div class="numbertext">1 / 4</div>
-      <img src="img/slideshow/img1.jpg" style="width:100%">
+            <!-- Start Header -->
+            <div class="header">
 
-      </div>
+                <div class="header_logo"></div>
+                <div class="header_navigation_item" id="navigation_about"         ><a href="#section_1">About</a></div>
+                <div class="header_navigation_item" id="navigation_opportunities" ><a href="#section_2">Opportunities</a></div>
+                <div class="header_navigation_item" id="navigation_meetups"       ><a href="#section_3">About</a></div>
+                <div class="header_navigation_item" id="navigation_contact"       >Contact</div>
 
-      <div class="mySlides fadeSlide">
-      <div class="numbertext">2 / 4</div>
-      <img src="img/slideshow/img2.jpg" style="width:100%">
-
-      </div>
-
-      <div class="mySlides fadeSlide">
-      <div class="numbertext">3 / 4</div>
-      <img src="img/slideshow/img3.jpg" style="width:100%">
-
-      </div>
-      
-      <div class="mySlides fadeSlide">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/slideshow/img4.jpg" style="width:100%">
-
-      </div>
-
-
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-center">About Us</h2>
-          <p class="lead">
-            Founded in 1947, the Association for Computing Machinery (ACM) is the world’s largest scientific and
-            education computing society. Our school chapter UNLV ACM works to connect student by hosting workshops,
-            lectures, attending seminars, and competing in regional coding competitions. We learn from professionals in
-            the industry, gain coding experience, and land internships! Anyone with a passion for coding or for Computer
-            Science are welcome to join!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <h2 class="col-lg-8 mx-auto text-center">What We Do</h2>
-
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a data-toggle="modal" data-target="#modICPC">
-              <img class="card-img-top img-cursor" src="img/busImg.PNG" alt="" style="height: 400px;">
-            </a>
-            <div class="card-body">
-              <h4>
-                <a data-toggle="modal" data-target="#modICPC" class="img-cursor text-center">ICPC</a>
-              </h4>
-              <p class="lead">
-                Every November, UNLV ACM members compete in the International Collegiate Programming Competition (ICPC)
-                Southern California Regional Contest held in Riverside, CA. There students have a chance to show off
-                their coding skills and gain competition experience with other university students. </p>
             </div>
-          </div>
-        </div>
+            <!-- End Header -->
 
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a data-toggle="modal" data-target="#modWorkshops">
-              <img class="card-img-top img-cursor" src="img/conference.PNG" alt="" style="height: 400px;">
-            </a>
-            <div class="card-body">
-              <h4>
-                <a data-toggle="modal" data-target="#modWorkshops" class="img-cursor">Coding Workshops</a>
-              </h4>
-              <p class="lead">
-                We let students work on their programming skills by training them how to code in other languages. These
-                workshops will teach you how to make impressive projects like web apps or native games!
-              </p>
+            <!-- Banner Wrapper -->
+            <div class="banner">
+
+                <!-- Start Banner Text -->
+                <div class="banner_text">UNLV ACM</div>
+                <!-- End Banner Text -->
+
             </div>
-          </div>
-        </div>
+            <!-- End Banner Wrapper -->
 
-      </div>
-    </div>
-  </section>
+            <!-- Start Main Content -->
+            <div class="main_content">
 
-  <section id="meetups">
-    <div class="container">
-      <div class="row">
-        <h2 class="col-lg-8 mx-auto text-center">Our Meetups</h2>
-        <p class="lead text-center mx-auto">
+                <!-- Start Section -->
+                <div class="section" id="section_1">
 
-          <!-- ED'S CHANGES 2/24, 3/5 -->
-          <br>
-          Come to our ICPC Coding Meetups! We meet up, discuss coding problems, <br>
-          and prep for ICPC (our coding competition in California) every Saturday. <br><br>
-          
-          <!-- ED'S CHANGES 2/24, 3/5 -->
+                    <!-- Start Section Title -->
+                    <div class="section_title">About Us</div>
+                    <!-- End Section Title -->
 
-        </p>
-        <iframe style="display: inline-block"
-            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWNtQHVubHYuZWR1&amp;src=amZ1ZXRkN2w3YWY4aDBiZ2JpN2lrNjNwaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23795548&amp;color=%2333B679&amp;color=%23009688"
-            style="border-width:0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
-  </section>
+                    <!-- Start Section Content -->
+                    <div class="section_content">
 
-  <section id="contact" class="bg-dark">
-    <div class="container">
-      <div class="row text-white">
-        <h2 class="col-lg-8 mx-auto text-center">Contact Us</h2>
-        <div class="col-lg-8 mx-auto text-center">
+                        <!-- Start Topic -->
+                        <div class="topic">
 
-          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Your Name <input class="form-control" type="text" name="name" required />
-                </p>
-              </div>
-              <div class="col-md-6">
-                <p>
-                  Your Email <input class="form-control" type="email" name="email" required />
-                </p>
-              </div>
+                            <!-- Start Topic Blurb -->
+                            <div class="topic_blurb">
+                                Founded in 1947, the Association for Computing Machinery (ACM) is the world’s largest scientific and education computing society. Our school chapter UNLV ACM works to connect student by hosting workshops, lectures, attending seminars, and competing in regional coding competitions. We learn from professionals in the industry, gain coding experience, and land internships! Anyone with a passion for coding or for Computer Science are welcome to join!
+                            </div>
+                            <!-- End Topic Blurb -->                        
+
+                        </div>
+                        <!-- End Topic -->
+
+                    </div>
+                    <!-- End Section Content -->
+
+
+                    <!-- Start Contact Icons -->
+                    <div class="contact_icons">
+
+                        <!-- Start Twitter -->
+                        <div class="contact_icon">
+                            <a href="https://twitter.com/unlv_acm?lang=en">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                        </div>
+                        <!-- End Twitter -->
+
+                        <!-- Start Instagram -->
+                        <div class="contact_icon">
+                            <a href="https://www.instagram.com/unlvacm/">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </div>
+                        <!-- End Instagram -->
+
+                        <!-- Start Facebook -->
+                        <div class="contact_icon">
+                            <a href="https://www.facebook.com/unlvacm/">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                        </div>
+                        <!-- End Facebook -->
+
+                    </div>
+                    <!-- End Contact Icons -->
+
+                </div>
+                <!-- End Section -->
+
+                <!-- Start Section -->
+                <div class="section" id="section_2">
+
+                    <!-- Start Section Title -->
+                    <div class="section_title">What We Do</div>
+                    <!-- End Section Title -->
+
+                    <!-- Start Section Content -->
+                    <div class="section_content">
+
+                        <!-- Start Topic -->
+                        <div class="topic">
+
+                            <!-- Start Picture -->
+                            <div class="topic_picture" id="topic_2_picture"></div>
+                            <!-- End Picture -->
+
+                            <!-- Start Picture Blurb -->
+                            <div class="topic_picture_blurb">
+                                We let students work on their programming skills by training them how to code in other languages. These workshops will teach you how to make impressive projects like web apps or native games!
+                            </div>
+                            <!-- End Picture Blurb -->
+
+                        </div>
+                        <!-- End Topic -->
+
+                        <!-- Start Topic -->
+                        <div class="topic">
+
+                            <!-- Start Picture Blurb -->
+                            <div class="topic_picture_blurb">
+                                Every November, UNLV ACM members compete in the International Collegiate Programming Competition (ICPC) Southern California Regional Contest held in Riverside, CA. There students have a chance to show off their coding skills and gain competition experience with other university students.
+                            </div>
+                            <!-- End Picture Blurb -->
+
+                            <!-- Start Picture -->
+                            <div class="topic_picture" id="topic_3_picture"></div>
+                            <!-- End Picture -->
+
+                        </div>
+                        <!-- End Topic -->
+
+                    </div>
+                    <!-- End Section Content -->
+
+                </div>
+                <!-- End Section -->
+
+                <!-- Start Section -->
+                <div class="section" id="section_3">
+
+                    <!-- Start Section Title -->
+                    <div class="section_title">Meetups</div>
+                    <!-- End Section Title -->
+
+                    <!-- Start Section Content -->
+                    <div class="section_content">
+
+                        <!-- Start Topic -->
+                        <div class="topic">
+
+                            <!-- Start Topic Blurb -->
+                            <div class="topic_blurb" id="topic_4_blurb">
+                                Come to our ICPC Coding Meetups! We meet up, discuss coding problems, and prep for ICPC (our coding competition in California) every Saturday.
+                            </div>
+                            <!-- End Topic Blurb -->
+
+                        </div>
+                        <!-- End Topic -->
+
+                    </div>
+                    <!-- End Section Content -->
+
+                </div>
+                <!-- End Section -->
+
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>
-                  Subject <input class="form-control" type="text" name="subject" required />
-                </p>
-              </div>
-            </div>
+            <!-- End Main Content -->
 
-            <div class="row">
-              <div class="col-md-12">
-                <p>
-                  Message <textarea rows="5" class="form-control" name="message" required></textarea>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 mx-auto" style="text-align: center">
-                <div data-netlify-recaptcha="true" style="display:inline-block"></div>
-              </div>
-            </div>
-
-            <p>
-              <button class="btn btn-outline-light" type="submit">Send</button>
-            </p>
-          </form>
-          <!-- <p class="lead"> Email: acm@unlv.edu </p> -->
-          <ul class="list-inline pt-3">
-            <li class="list-inline-item">
-              <a href="https://twitter.com/unlv_acm?lang=en" target="_blank" class="no-dec">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/unlvacm/" target="_blank" class="no-dec">
-                <i class="fab fa-instagram fa-2x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/unlvacm/" target="_blank" class="no-dec">
-                <i class="fab fa-facebook-f fa-2x"></i>
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </div>
-  </section>
+        <!-- End Main Wrapper -->
 
-  <!-- Footer -->
-  <footer class="py-2 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; UNLV ACM</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+        <!-- Javascript -->
+        <script src="scripts/script.js" type="text/javascript"></script>
 
-
-  <div class="modal fade" id="modICPC">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h4 class="modal-title">ICPC</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <div class="modal-body bg-light my-modal-text">
-          <p>
-            Every November we compete in the International Collegiate Programming Competition held in Riverside,
-            California.
-            This lets students sharpen their problem solving and coding skills.
-            <br>
-            <br>
-            This is what you can do to prepare for the competition:
-          </p>
-          <ul>
-            <li>Learn how to use Vim or Emacs</li>
-            <li>Have a solid foundation of the functioning and syntax of C++, Python, or Java</li>
-            <li>
-              Try and solve past ICPC problems that can be found
-              <a href="http://socalcontest.org/current/index.shtml"> here</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modWorkshops">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h4 class="modal-title">Coding Workshops</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <div class="modal-body bg-light my-modal-text">
-          <p>
-            It can be challenging trying to learn a new programming language on your own.
-            But there is no need to worry, that is why we are here! During the semester we
-            will have workshops that will help you learn new languages.
-            <br>
-            <br>
-            Workshops will include the following:
-          </p>
-          <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Android</li>
-            <li>Unity</li>
-            <li>Git</li>
-          </ul>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
-  
-  <!--  For slideshow -->
-  <script src="js/slideshow.js"></script>
-
-</body>
+    </body>
 
 </html>
